@@ -1,0 +1,102 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+header .logo img {
+    max-width: 250px;       
+    height: 250px;          
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;             
+    display: flex;         
+    gap: 20px;             
+}
+
+nav ul li {
+    padding: 10px;         
+    cursor: pointer;       
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    transition: color 0.3s;
+    font-size: 46px; 
+    transition: all 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #0056b3; 
+}
+.cats-list {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cats-list h2 {
+    text-align: center;
+    color: #333;
+    font-size: 80px;
+}
+
+.cat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+}
+
+.cat img {
+    width: 500px; 
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10%; 
+    margin-right: 20px; 
+}
+.cat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-info h3 {
+    margin: 0 0 5px 0; 
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.cat-info p {
+    font-size: 24px;
+    color: #666;
+    line-height: 1.5; 
+}
+.adopt-me-link {
+    margin-top: 40px;
+    text-decoration: none; 
+}
+
+.adopt-me {
+    padding: 10px 20px;
+    background-color: #366083; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: linear 0.5s;
+}
+
+.adopt-me:hover {
+    background-color: #040507; 
+}

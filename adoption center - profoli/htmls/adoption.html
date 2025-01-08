@@ -23,6 +23,7 @@
         </nav>
     </header>
     <section class="adoption-form-section">
+        <div id="animal-info"></div>
         <form id="adoption-form" action="/submit-adoption-form" method="post">
             <h2>Animal Adoption Form</h2>
 
@@ -63,6 +64,21 @@
 
             <button type="submit">Submit Application</button>
         </form>
+        <script>
+            window.onload = function() {
+                const params = new URLSearchParams(window.location.search);
+                const name = params.get('name');
+                const image = params.get('image');
+    
+                const infoDiv = document.getElementById('animal-info');
+                infoDiv.innerHTML = `
+                    <h1>Let's Adpot ${name}</h1>
+                    <img src="${image}" alt="${name}" style="width: 400px; height: auto;">
+                `;
+                infoDiv.style.color='#30526b';
+                infoDiv.style.fontFamily='Georgia';
+            };
+        </script>
     </section>
     <footer></footer>
         <div class="footer-bottom">

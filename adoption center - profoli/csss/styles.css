@@ -39,7 +39,7 @@ nav ul li a:hover {
     background-image: url('../images/front-img.avif'); 
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 700px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -112,7 +112,7 @@ footer {
 }
 
 .gallery img {
-    width: calc(33% - 20px); 
+    width: 350px; 
     margin: 10px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -156,4 +156,89 @@ footer {
 .footer-bottom p {
     margin: 5px 0; 
     font-size: 24px;
+}
+/*responsive section*/
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 30px; 
+    }
+
+    .main-front {
+        height: 600px;
+    }
+
+    .main-front h1 {
+        font-size: 40px;
+    }
+
+    .about-us h2 {
+        font-size: 36px;
+    }
+
+    .about-us p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        font-size: 24px; 
+    }
+
+    .main-front {
+        height: 500px;
+    }
+
+    .main-front h1 {
+        font-size: 32px;
+    }
+
+    .about-us h2 {
+        font-size: 30px;
+    }
+
+    .about-us p {
+        font-size: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .contact-form, .gallery {
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 100%; 
+        margin: 5px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-front h1 {
+        font-size: 28px;
+    }
+
+    .about-us h2 {
+        font-size: 24px;
+    }
+
+    .about-us p {
+        font-size: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 16px;
+    }
 }

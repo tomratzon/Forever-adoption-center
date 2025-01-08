@@ -95,6 +95,7 @@ nav ul li a:hover {
     cursor: pointer;
     font-size: 24px;
     transition: linear 0.5s;
+    width: 180px;
 }
 
 .adopt-me:hover {
@@ -124,4 +125,96 @@ footer {
 .footer-bottom p {
     margin: 5px 0; 
     font-size: 24px;
+}
+/*responsive section */
+@media (max-width: 992px) {
+    header .logo img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    nav ul li a {
+        font-size: 36px; 
+    }
+
+    .dogs-list h2 {
+        font-size: 60px; 
+    }
+
+    .dog img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    nav ul li a {
+        font-size: 28px; 
+    }
+
+    .dogs-list h2 {
+        font-size: 40px;
+    }
+
+    .dog {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .dog img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .dog-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .adopt-me {
+        width: 100%; 
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom p {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 24px;
+    }
+
+    .dog img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .adopt-me {
+        padding: 12px 24px; 
+    }
+
+    .footer-bottom p {
+        font-size: 16px; 
+    }
 }

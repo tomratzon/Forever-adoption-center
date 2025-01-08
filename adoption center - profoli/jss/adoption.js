@@ -31,3 +31,7 @@ document.addEventListener('DOMContentLoaded',function(){ //present message after
         form.style.fontWeight='bold';
     }); 
 });
+function redirectToForm(name, imageUrl) {
+    const formUrl = `adoption.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(imageUrl)}`;
+    window.location.href = formUrl;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../csss/adoption.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="C:\Users\tomra\OneDrive\שולחן העבודה\projects\code_academy\adoption center - profoli\htmls\index.html" class="logo-button">
+                <img src="../images/logo.webp" alt="Forever Home Animal Adoption Center Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\tomra\OneDrive\שולחן העבודה\projects\code_academy\adoption center - profoli\htmls\dogs.html">Dogs</a></li>
+                <li><a href="C:\Users\tomra\OneDrive\שולחן העבודה\projects\code_academy\adoption center - profoli\htmls\cats.html">Cats</a></li>
+                <li><a href="C:\Users\tomra\OneDrive\שולחן העבודה\projects\code_academy\adoption center - profoli\htmls\rodents.html">Rodent</a></li>
+                <li><a href="C:\Users\tomra\OneDrive\שולחן העבודה\projects\code_academy\adoption center - profoli\htmls\reptiles.html">Reptiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="adoption-form-section">
+        <form id="adoption-form" action="/submit-adoption-form" method="post">
+            <h2>Animal Adoption Form</h2>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <fieldset class="pet-question">
+                <legend>Do you have another pet?</legend>
+                <label for="yes-pet">
+                    <input type="radio" id="yes-pet" name="hasOtherPet" value="yes" required>
+                    Yes
+                </label>
+                <label for="no-pet">
+                    <input type="radio" id="no-pet" name="hasOtherPet" value="no" required>
+                    No
+                </label>
+            </fieldset>
+
+            <div id="type-of-animal" style="display: none;">
+                <label for="animalType">Type of Animal:</label>
+                <select id="animalType" name="animalType">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="rabbit">Rabbit</option>
+                    <option value="bird">Bird</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <label for="reason">Why do you want to adopt an animal?</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+    <footer></footer>
+        <div class="footer-bottom">
+            <p>1234 Adoption Street, City, State, 90210</p>
+            <p>© 2025 Forever Home Animal Adoption Center. All rights reserved.</p>
+        </div>
+    </footer>  
+    <script src="../jss/adoption.js"></script>
+    
+</body>
+</html>

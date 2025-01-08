@@ -1,0 +1,127 @@
+html{
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: #000000;
+    opacity: 0.9;
+    text-align: center;
+}
+header{
+    background-color: #000000;
+    height: 79px;
+    position: relative;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+}
+.logo{
+    align-content: baseline;
+    margin: 0 10px;
+    height: 50px;
+}
+.nav{
+    margin-left: auto;
+    margin: 20px 0;
+    
+}
+.nav ul{
+    display: flex; 
+    list-style-type: none;
+    
+    
+}
+.nav-bar li{
+    display: inline;
+    padding: 0 10px;
+    margin-right: 20px;
+    
+}
+.nav-bar a{
+    color: seashell;
+    text-decoration: underline;
+}
+.mission{
+    
+    background-image: url('imges/img-mission-background.jpg'); 
+    height: 100px;
+    padding: 350px 0; 
+    text-align: center; 
+    width: 100%;
+    
+}
+.mission-text{
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    border-bottom: 1px solid seashell; 
+    padding-bottom: 10px; 
+    display: inline-block; 
+    background-color: #000000;
+    align-content: center;
+    width: 100%;
+}
+.tea-month {
+    max-width: 1000px; 
+    margin: 30px auto; 
+    text-align: center; 
+    margin-bottom: 60px;
+}
+
+.tea-month h2, .tea-of-the-month p {
+    margin-bottom: 20px; 
+}
+
+.tea-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    margin-bottom: 120px;
+}
+.tea-item { 
+    max-width: 300px;
+    max-height: 200px;
+    padding: 10px;
+    border-radius: 10px; 
+    flex: 1 1 200px; 
+    margin: 10px; 
+    box-sizing: border-box; 
+}
+
+.tea-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.tea-item h4 {
+    margin-top: 10px; 
+}
+.locations{
+    background: url('imges/img-locations-background.jpg');
+    text-align: center;
+    padding: 40px 0;
+    height: 500px;
+}
+.loc-item{
+    background-color: #000000;
+    opacity: 1;
+    width: 300px; /* Width of each location box */
+    padding: 20px; /* Padding inside the boxes */
+    margin: 10px 20px; /* Center each location box horizontally */
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block;
+   
+
+
+}
+footer{
+    color: white;
+    margin: 0 20px;
+    height: 220px;
+}
+.copyright{
+    text-align: left;
+}

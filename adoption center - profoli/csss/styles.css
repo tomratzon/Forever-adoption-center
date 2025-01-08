@@ -53,51 +53,54 @@ nav ul li a:hover {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 .about-us {
-    text-align: center; /* Center aligns the text */
-    font-family: 'Arial', sans-serif; /* You can choose another font */
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
     margin: 20px;
     padding: 20px;
-    background-color: #366083; /* Light grey background for visibility */
-    border-radius: 8px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Optional: adds subtle shadow */
+    background-color: #366083; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .about-us h2 {
-    font-size: 44px; /* Larger font size for headings */
-    color: #f1f1f1; /* Dark grey color for text */
-    margin-bottom: 10px; /* Space below the heading */
+    font-size: 44px; 
+    color: #f1f1f1; 
+    margin-bottom: 10px; 
 }
 
 .about-us p {
-    font-size: 36px; /* Readable font size for paragraph */
-    color: #ece4e4; /* Lighter grey color for paragraph text */
-    line-height: 1.5; /* Increases line spacing for better readability */
+    font-size: 36px; 
+    color: #ece4e4; 
+    line-height: 1.5; 
     font-family: Arial, Helvetica, sans-serif;
 }
 footer {
     background-color: #f4f4f4;
     padding: 20px;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .footer-content {
     display: flex;
     width: 100%;
+    align-items: flex-start;
 }
 
 .contact-form {
     width: 30%;
     padding: 10px;
-    border: 2px solid #ccc; /* Adding border to the form */
+    border: 2px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 .contact-form p {
     margin-top: 100px;
-   font-size: 24px;
-   font-family: serif;
-   text-align: center;
+    font-size: 24px;
+    font-family: serif;
+    text-align: center;
 }
 
 .gallery {
@@ -109,7 +112,7 @@ footer {
 }
 
 .gallery img {
-    width: calc(33% - 20px); /* Three images per row, adjust margins as needed */
+    width: calc(33% - 20px); 
     margin: 10px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -140,4 +143,17 @@ footer {
 
 .contact-form button:hover {
     background-color: #45a049;
+}
+
+.footer-bottom {
+    width: 100%; 
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 14px; 
+    color: #333; 
+}
+
+.footer-bottom p {
+    margin: 5px 0; 
+    font-size: 24px;
 }

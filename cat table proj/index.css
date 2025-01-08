@@ -1,0 +1,33 @@
+body{
+    background-color: blanchedalmond;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table{
+    background-color: aquamarine;
+   
+}
+p{
+    color: brown;
+    background-image: url("./images/cat4.jpeg");
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 100px;
+}
+.stam{
+    background-color: azure;
+    color: black;
+    
+}
+footer{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+header{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 1000;
+    font-size: 60px;
+}
